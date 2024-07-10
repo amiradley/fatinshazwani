@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mindful Horizon</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showProfile(profileId) {
+            document.querySelectorAll('.profile').forEach(profile => {
+                profile.style.display = 'none';
+            });
+            document.getElementById(profileId).style.display = 'block';
+        }
+    </script>
+</head>
+<body class="about-body">
+    <header>
+        <img src="banner.png" alt="Mindful Horizon Banner">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="mental-health.html">Mental Health</a>
+        <a href="success_stories.html">Success Stories</a>
+        <a href="need-help.html">Need Help?</a>
+    </nav>
+    <main class="content">
+        <h1 class="main-headline">About Mindful Horizon</h1>
+        <section class="section">
+            <div class="caption">
+                <h2>Who We Are</h2>
+                <p>
+                    Mindful Horizon is a leading organization dedicated to providing support and spreading awareness about mental health. Our mission is to create a world where mental health is understood, accepted, and prioritized by all. We offer resources, support, and guidance to individuals struggling with mental health challenges, ensuring they have access to the help they need.
+                </p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="caption">
+                <h2>Our Vision</h2>
+                <p>
+                    To be a global leader in mental health awareness and support, fostering a compassionate society where mental well-being is a fundamental right for everyone.
+                </p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="caption">
+                <h2>Our Missions</h2>
+                <ol class="numbered-list">
+                    <li>Provide accessible mental health resources and support to individuals and communities.</li>
+                    <li>Raise awareness and reduce the stigma associated with mental health issues.</li>
+                    <li>Promote mental well-being through education and advocacy.</li>
+                    <li>Collaborate with healthcare professionals to improve mental health services.</li>
+                    <li>Empower individuals to take charge of their mental health through various programs and initiatives.</li>
+                </ol>
+            </div>
+        </section>
+        <section class="section">
+            <div class="caption">
+                <img src="logo.png" alt="Mindful Horizon Logo" class="logo">
+            </div>
+        </section>
+        <section class="new-section">
+            <h2 class="subheadline">Board of Directors</h2>
+            <div class="ways-section">
+                <div class="way-box ceo" onclick="showProfile('founder')">
+                    <div class="way-image">
+                        <img src="founder.png" alt="Founder">
+                    </div>
+                    <p><strong>Fatin Shazwani Binti Misran</strong><br>Founder & CEO</p>
+                </div>
+            </div>
+            <div class="ways-section">
+                <div class="way-box" onclick="showProfile('coo')">
+                    <div class="way-image">
+                        <img src="coo.png" alt="COO">
+                    </div>
+                    <p><strong>John Doe</strong><br>Chief Operating Officer</p>
+                </div>
+                <div class="way-box" onclick="showProfile('head')">
+                    <div class="way-image">
+                        <img src="head.png" alt="Head">
+                    </div>
+                    <p><strong>Jane Smith</strong><br>Head of Mental Health Programs</p>
+                </div>
+                <div class="way-box" onclick="showProfile('expert')">
+                    <div class="way-image">
+                        <img src="expert.png" alt="Expert">
+                    </div>
+                    <p><strong>Michael Johnson</strong><br>Mental Health Expert</p>
+                </div>
+            </div>
+            <div id="founder" class="profile">
+                <h2>Fatin Shazwani Binti Misran</h2>
+                <p>
+                    Fatin Shazwani Binti Misran used to struggle with mental health issues. Inspired by her journey to recovery, she founded Mindful Horizon to help others facing similar challenges. With a deep understanding of the importance of mental well-being, she is committed to making mental health support accessible to everyone.
+                </p>
+            </div>
+            <div id="coo" class="profile" style="display:none;">
+                <h2>John Doe</h2>
+                <p>
+                    John Doe has been actively involved in delivering training related to mental health advocacy. In individual therapy, he works closely with individuals who struggle with stress/anger management, anxiety, mood disorders, trauma, relationship issues, personality disorders, and child mental health issues.
+                </p>
+            </div>
+            <div id="head" class="profile" style="display:none;">
+                <h2>Jane Smith</h2>
+                <p>
+                    Jane Smith's past clinical experience has been in the hospital and private practice settings. Beyond clinical work, she is also involved in corporate training and facilitation. She aims to provide clients with practical coping skills that enhance their personal growth and psychological functioning.
+                </p>
+            </div>
+            <div id="expert" class="profile" style="display:none;">
+                <h2>Michael Johnson</h2>
+                <p>
+                    Michael Johnson is experienced in the treatment of depression and anxiety among working professionals. He advocates cognitive and behavioral skills development in improving psychological functioning. Skilled in training and facilitation, he is passionate about helping adults achieve their full potential.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        FATIN SHAZWANI BINTI MISRAN | 1920 x 1080 | LAST UPDATE: 2 JULY 2024
+    </footer>
+</body>
+</html>
